@@ -1,0 +1,126 @@
+﻿body {
+    width: fit-content;
+    min-height: 680px;
+    box-sizing: border-box;
+    background: url('~/Home.png');
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image in the container */
+}
+
+.home .logo-bg-void-1 {
+    background: url('~/logo.png');
+    width: 152px;
+    height: 152px;
+}
+
+.home .home-1 {
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 30px;
+    color: #4DB848;
+}
+
+.home .container {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    background: #FFFFFF;
+    position: relative;
+    margin-right: 35.1px;
+    display: flex;
+    padding: 13px 0 13px 6px;
+    width: 222px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.home .administrator {
+    margin: 13px 66.8px 13px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 30px;
+    color: #00B5EC;
+    cursor: pointer;
+}
+
+.home .register {
+    margin: 13px 66.8px 13px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 30px;
+    color: #00B5EC;
+    cursor: pointer;
+}
+
+.home .log-in {
+    margin: 13px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 30px;
+    color: #00B5EC;
+    cursor: pointer;
+}
+
+.home .container-2 {
+    width: fit-content;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
+    box-sizing: border-box;
+    padding-left: 70vh;
+}
+
+.home .container-6 {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.details .welcome {
+    margin: 0 118px;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 100px;
+    color: #00B5EC;
+}
+
+.home .container-5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+    .details .sri-lanka-telecom-seat-reservation-system {
+        overflow-wrap: break-word;
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 30px;
+        color: #0056A4;
+        padding-left: 18vh;
+    }
+
+.home {
+    display: flex;
+    box-sizing: border-box;
+}

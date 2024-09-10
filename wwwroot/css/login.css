@@ -1,0 +1,297 @@
+﻿
+.form .welcome {
+    margin-bottom: 5px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 105px;
+    color: #00B5EC;
+}
+
+.form .log-in-to-access-your-account-and-reserve-your-seat {
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 24px;
+    color: #0056A4;
+}
+
+.form .group-7 {
+    margin: 128px 161px 310px 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.form .log-in-1 {
+    margin: 0 0 40px 8px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 50px;
+    color: #00B5EC;
+}
+
+.form .enter-email-address {
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.form .group-1 {
+    border-radius: 30px;
+    background: rgba(192, 249, 255, 0.28);
+    position: relative;
+    margin: 0 5px 29px 0;
+    padding: 10.5px 36px 12.5px 36px;
+    width: 70vh;
+    box-sizing: border-box;
+}
+
+.form .enter-password {
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.form .group-2 {
+    border-radius: 30px;
+    background: #EDFDFF;
+    position: relative;
+    margin: 0 5px 6px 0;
+    padding: 9.5px 36px 13.5px 36px;
+    width: 70vh;
+    box-sizing: border-box;
+}
+
+.form .er-1 {
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    color: #00B5EC;
+}
+
+.form .log-in-2 {
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.form .group-6 {
+    border-radius: 30px;
+    background: #00B5EC;
+    position: relative;
+    margin-top: 4vh;
+    margin-bottom: 26px;
+    display: flex;
+    padding: 10px 0 10px 0px;
+    width: 70vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.form .er {
+    margin-right: 6px;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 24px;
+    color: #0056A4;
+}
+
+.er {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.333;
+    color: #00B5EC;
+}
+
+.form .container-3 {
+    border-radius: 30px;
+    background: #FFFFFF;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 20px 0;
+    width: 600px;
+    box-sizing: border-box;
+    margin-left: 20vh;
+}
+
+.form {
+    position: relative;
+    width: 300vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: -15vh;
+}
+
+.account {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    color: #0056A4;
+}
+
+.text {
+    margin-top: -8vh;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    justify-content: center;
+}
+
+    .text p {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 20px;
+        color: #0056A4;
+        color: #00B5EC;
+        margin-top: -0.05vh;
+    }
+
+body {
+    width: fit-content;
+    min-height: 680px;
+    box-sizing: border-box;
+    background: url('~/Home.png');
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image in the container */
+    overflow: hidden;
+}
+
+.home .logo-bg-void-1 {
+    background: url('~/logo.png');
+    background-size: cover;
+    width: 152px;
+    height: 152px;
+}
+
+.home .home-1 {
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    color: #4DB848;
+}
+
+.home .container {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    background: #FFFFFF;
+    position: relative;
+    margin-right: 35px;
+    display: flex;
+    padding: 16px 0 16px 6px;
+    width: 222px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.home .administrator {
+    margin: 13px 66.8px 13px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    color: #00B5EC;
+    cursor: pointer;
+}
+
+.home .register {
+    margin: 13px 66.8px 13px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    color: #00B5EC;
+    cursor: pointer;
+}
+
+.home .log-in {
+    margin: 13px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    color: #00B5EC;
+    cursor: pointer;
+}
+
+.home .container-2 {
+    width: fit-content;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
+    box-sizing: border-box;
+    padding-left: 90vh;
+}
+
+.home .container-6 {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.details .welcome {
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 80px;
+    color: #00B5EC;
+}
+
+.home .container-5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vh;
+    margin-top: -10vh;
+}
+
+    .details .sri-lanka-telecom-seat-reservation-system {
+        overflow-wrap: break-word;
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 30px;
+        color: #0056A4;
+    }
+
+.home {
+    display: flex;
+    box-sizing: border-box;
+}

@@ -1,0 +1,237 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Book\user_book_now.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\images\Home.png" />
+    <None Include="wwwroot\assets\images\logo_bg_void_1.png" />
+    <None Include="wwwroot\assets\vectors\container_x1.svg" />
+    <None Include="wwwroot\assets\vectors\edit_3_svgrepo_com_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_210_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_211_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_212_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_213_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_214_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_215_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_216_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_217_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_218_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_21_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_22_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_23_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_24_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_25_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_26_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_27_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_28_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_29_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_2_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_310_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_311_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_312_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_313_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_314_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_315_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_316_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_317_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_318_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_31_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_32_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_33_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_34_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_35_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_36_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_37_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_38_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_39_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_3_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_410_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_411_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_412_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_413_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_414_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_415_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_416_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_417_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_418_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_41_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_42_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_43_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_44_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_45_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_46_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_47_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_48_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_49_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_4_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_510_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_511_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_512_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_513_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_514_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_515_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_516_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_517_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_518_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_51_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_52_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_53_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_54_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_55_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_56_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_57_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_58_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_59_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_5_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_610_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_611_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_612_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_613_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_614_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_615_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_616_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_617_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_618_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_61_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_62_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_63_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_64_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_65_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_66_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_67_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_68_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_69_x1.svg" />
+    <None Include="wwwroot\assets\vectors\ellipse_6_x1.svg" />
+    <None Include="wwwroot\assets\vectors\group_x1.svg" />
+    <None Include="wwwroot\assets\vectors\logout_svgrepo_com_10_x1.svg" />
+    <None Include="wwwroot\assets\vectors\logout_svgrepo_com_11_x1.svg" />
+    <None Include="wwwroot\assets\vectors\logout_svgrepo_com_12_x1.svg" />
+    <None Include="wwwroot\assets\vectors\logout_svgrepo_com_13_x1.svg" />
+    <None Include="wwwroot\assets\vectors\logout_svgrepo_com_14_x1.svg" />
+    <None Include="wwwroot\assets\vectors\logout_svgrepo_com_1_x1.svg" />
+    <None Include="wwwroot\assets\vectors\logout_svgrepo_com_2_x1.svg" />
+    <None Include="wwwroot\assets\vectors\logout_svgrepo_com_3_x1.svg" />
+    <None Include="wwwroot\assets\vectors\logout_svgrepo_com_4_x1.svg" />
+    <None Include="wwwroot\assets\vectors\logout_svgrepo_com_5_x1.svg" />
+    <None Include="wwwroot\assets\vectors\logout_svgrepo_com_6_x1.svg" />
+    <None Include="wwwroot\assets\vectors\logout_svgrepo_com_7_x1.svg" />
+    <None Include="wwwroot\assets\vectors\logout_svgrepo_com_8_x1.svg" />
+    <None Include="wwwroot\assets\vectors\logout_svgrepo_com_9_x1.svg" />
+    <None Include="wwwroot\assets\vectors\logout_svgrepo_com_x1.svg" />
+    <None Include="wwwroot\assets\vectors\mailed_svgrepo_com_10_x1.svg" />
+    <None Include="wwwroot\assets\vectors\mailed_svgrepo_com_11_x1.svg" />
+    <None Include="wwwroot\assets\vectors\mailed_svgrepo_com_12_x1.svg" />
+    <None Include="wwwroot\assets\vectors\mailed_svgrepo_com_13_x1.svg" />
+    <None Include="wwwroot\assets\vectors\mailed_svgrepo_com_14_x1.svg" />
+    <None Include="wwwroot\assets\vectors\mailed_svgrepo_com_1_x1.svg" />
+    <None Include="wwwroot\assets\vectors\mailed_svgrepo_com_2_x1.svg" />
+    <None Include="wwwroot\assets\vectors\mailed_svgrepo_com_3_x1.svg" />
+    <None Include="wwwroot\assets\vectors\mailed_svgrepo_com_4_x1.svg" />
+    <None Include="wwwroot\assets\vectors\mailed_svgrepo_com_5_x1.svg" />
+    <None Include="wwwroot\assets\vectors\mailed_svgrepo_com_6_x1.svg" />
+    <None Include="wwwroot\assets\vectors\mailed_svgrepo_com_7_x1.svg" />
+    <None Include="wwwroot\assets\vectors\mailed_svgrepo_com_8_x1.svg" />
+    <None Include="wwwroot\assets\vectors\mailed_svgrepo_com_9_x1.svg" />
+    <None Include="wwwroot\assets\vectors\mailed_svgrepo_com_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_10_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_11_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_12_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_13_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_14_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_15_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_16_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_17_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_18_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_19_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_1_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_20_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_21_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_22_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_23_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_24_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_25_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_26_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_27_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_28_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_29_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_2_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_30_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_31_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_32_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_33_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_34_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_35_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_36_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_37_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_38_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_39_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_3_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_40_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_41_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_42_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_43_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_44_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_45_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_46_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_47_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_48_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_49_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_4_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_50_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_51_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_52_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_53_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_54_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_55_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_56_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_57_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_58_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_59_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_5_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_60_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_61_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_62_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_63_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_64_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_65_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_66_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_67_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_68_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_6_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_7_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_8_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_9_x1.svg" />
+    <None Include="wwwroot\assets\vectors\vector_x1.svg" />
+    <None Include="wwwroot\css\login.css" />
+    <None Include="wwwroot\css\user_book_now.css" />
+    <None Include="wwwroot\css\user_my_bookings.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Core" Version="3.7.400.16" />
+    <PackageReference Include="iTextSharp" Version="5.5.13.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.4" />
+    <PackageReference Include="QRCoder" Version="1.6.0" />
+    <PackageReference Include="ZXing.Net" Version="0.16.9" />
+  </ItemGroup>
+
+</Project>

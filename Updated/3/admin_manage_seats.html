@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Admin Manager Seats</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="admin_manage_seats.css" />
+	</head>
+	<body>
+		<div class="user-my-bookings">
+			<div class="container-14">
+				<div class="logo-bg-void-1">
+				</div>
+				<a href=""><div class="group-29">
+					<div class="home-svgrepo-com">
+						<img class="vector-9" src="./assets/vectors/vector_10_x1.svg" />
+					</div>
+					<div class="home">
+					Home
+					</div>
+				</div></a>
+				<a href=""><div class="group-30">
+					<div class="armchair-seat-svgrepo-com">
+						<img class="vector-8" src="./assets/vectors/vector_43_x1.svg" />
+					</div>
+					<div class="book-now">
+					Manage Seats
+					</div>
+				</div></a>
+				<a href=""><div class="group-31">
+					<div class="list-svgrepo-com">
+						<img class="vector-3" src="./assets/vectors/vector_15_x1.svg" />
+					</div>
+					<span class="my-bookings">
+					Booking Log
+					</span>
+				</div></a>
+				<a href="www.google.com"><div class="group-32">
+					<div class="mailed-svgrepo-com">
+						<img class="vector-9" src="./assets/vectors/mailed_svgrepo_com_13_x1.svg" />
+					</div>
+					<div  class="inquiries">
+					Inquiries
+					</div>
+				</div></a>
+				<a href=""><div class="group-33">
+				<div class="logout-svgrepo-com">
+				<img class="vector-3" src="./assets/vectors/logout_svgrepo_com_11_x1.svg" />
+				</div>
+					
+					<div class="log-out">
+					Log Out
+					</div>
+				</div>
+				</div></a>
+			<div class="container-63">
+				<div class="container-18">
+					<div class="user-circle-svgrepo-com">
+						<img class="vector-2" src="./assets/vectors/vector_64_x1.svg" />
+					</div>
+					<div class="user">
+					Admin
+					</div>
+				</div>
+				<div class="container-13">
+					<div class="my-bookings-1">
+					Manage Seats
+					</div>
+					<div class="line-1">
+					</div>
+					<div class="container-50">
+						<div class="container-30">
+							<div class="search-by-date">
+							Select Date
+							</div>
+							<div class="date-and-time-compact-expanded">
+							<div class="calendar-container">
+	
+        <div class="calendar-header">
+            <button class="prev-month">&lt;</button>
+            <span class="month-year"></span>
+            <button class="next-month">&gt;</button>
+        </div>
+        <div class="calendar-body">
+            <div class="day-names">
+                <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span>
+                <span>Thu</span><span>Fri</span><span>Sat</span>
+            </div>
+            <div class="days"></div>
+        </div>
+		<input type="text" id="selected-date" placeholder="Select Date" readonly>
+    </div>
+		</div>	
+		
+				<div class="group-14">
+						<button class="pay-now">
+								Confirm
+							</button>
+					</div>
+						</div>
+						<!-- Group 10 -->
+<div class="group-10">
+  <div class="container-row">
+    <div class="container"><button class="a-17">A1</button></div>
+    <div class="container"><button class="a-115">A1</button></div>
+    <div class="container"><button class="a-123">A1</button></div>
+    <div class="container"><button class="a-131">A1</button></div>
+	
+  </div>
+  <div class="container-row">
+    <div class="container"><button class="a-16">A1</button></div>
+    <div class="container"><button id="a-114">A1</button></div>
+    <div class="container"><button id="a-122">A1</button></div>
+    <div class="container"><button class="a-130">A1</button></div>
+  </div>
+    <div class="container-row">
+    <div class="container"><button class="a-16">A1</button></div>
+    <div class="container"><button id="a-114">A1</button></div>
+    <div class="container"><button id="a-122">A1</button></div>
+    <div class="container"><button class="a-130">A1</button></div>
+  </div>
+    <div class="container-row">
+    <div class="container"><button class="a-16">A1</button></div>
+    <div class="container"><button id="a-114">A1</button></div>
+    <div class="container"><button id="a-122">A1</button></div>
+    <div class="container"><button class="a-130">A1</button></div>
+  </div>
+</div>
+
+<!-- Group 9 -->
+<div class="group-9">
+  <div class="container-row">
+    <div class="container"><button class="a-139">A1</button></div>
+    <div class="container"><button class="a-147">A1</button></div>
+    <div class="container"><button class="a-155">A1</button></div>
+    <div class="container"><button class="a-163">A1</button></div>
+  </div>
+  <div class="container-row">
+    <div class="container"><button class="a-138">A1</button></div>
+    <div class="container"><button class="a-146">A1</button></div>
+    <div class="container"><button class="a-154">A1</button></div>
+    <div class="container"><button class="a-162">A1</button></div>
+  </div>
+</div>
+					</div>
+				</div>
+			</div>
+	
+		 <script>
+        /* Include the JavaScript code from above */
+		document.addEventListener('DOMContentLoaded', function () {
+    const selectedDateElement = document.getElementById('selected-date');
+    const calendar = document.querySelector('.calendar-container');
+    const monthYearElement = calendar.querySelector('.month-year');
+    const daysContainer = calendar.querySelector('.days');
+    const prevMonthButton = calendar.querySelector('.prev-month');
+    const nextMonthButton = calendar.querySelector('.next-month');
+
+    let currentDate = new Date();
+
+    function renderCalendar(date) {
+        const year = date.getFullYear();
+        const month = date.getMonth();
+        const firstDay = new Date(year, month, 1).getDay();
+        const lastDate = new Date(year, month + 1, 0).getDate();
+
+        monthYearElement.textContent = date.toLocaleString('default', { month: 'long', year: 'numeric' });
+
+        daysContainer.innerHTML = '';
+
+        for (let i = 0; i < firstDay; i++) {
+            daysContainer.innerHTML += `<span></span>`;
+        }
+
+        for (let i = 1; i <= lastDate; i++) {
+            const dayElement = document.createElement('span');
+            dayElement.textContent = i;
+            dayElement.addEventListener('click', () => selectDate(new Date(year, month, i)));
+            daysContainer.appendChild(dayElement);
+        }
+    }
+
+    function selectDate(date) {
+        selectedDateElement.value = date.toISOString().split('T')[0];
+        document.querySelectorAll('.days span').forEach(day => day.classList.remove('selected'));
+        const selectedDayElement = document.querySelector(`.days span:nth-child(${date.getDate() + new Date(date.getFullYear(), date.getMonth(), 1).getDay()})`);
+        if (selectedDayElement) {
+            selectedDayElement.classList.add('selected');
+        }
+    }
+
+    prevMonthButton.addEventListener('click', () => {
+        currentDate.setMonth(currentDate.getMonth() - 1);
+        renderCalendar(currentDate);
+    });
+
+    nextMonthButton.addEventListener('click', () => {
+        currentDate.setMonth(currentDate.getMonth() + 1);
+        renderCalendar(currentDate);
+    });
+
+    renderCalendar(currentDate);
+});
+
+	
+    </script>
+
+	</body>
+</html>

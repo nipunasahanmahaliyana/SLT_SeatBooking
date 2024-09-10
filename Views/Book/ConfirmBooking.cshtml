@@ -1,0 +1,502 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "User Profile";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="unnamed.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-image: url('assets/images/background.png'); /* Replace with your background image path */
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        .admin-dashboard {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: rgba(255, 255, 255, 0.9); /* White panel */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            justify-content: space-between;
+        }
+
+        .logo-container {
+            width: 100%;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-bg-void-1 {
+            width: 100%;
+            height: 120px;
+            background: url('assets/images/logo_bg_void_1.png') center/contain no-repeat;
+        }
+
+        .nav-items {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            flex-grow: 0.5;
+            justify-content: center;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            cursor: pointer;
+        }
+
+            .nav-item .icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            .nav-item .nav-text {
+                font-weight: 600;
+                font-size: 24px;
+                color: #00B5EC;
+            }
+
+            .nav-item .nav-textsl {
+                font-weight: 600;
+                font-size: 24px;
+                color: #4DB848;
+            }
+
+            .nav-item .logout {
+                color: #DD5353;
+            }
+
+        .logout-container {
+            margin-top: auto;
+            margin-bottom: 30px;
+        }
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #00B5EC;
+            padding: 40px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            padding-bottom: 20px;
+        }
+
+        .admin-btn {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+            .admin-btn .admin {
+                font-weight: 500;
+                font-size: 40px;
+                color: #00B5EC;
+                padding-top: 10px;
+            }
+
+            .admin-btn .user-icon img {
+                width: 40px;
+                height: 40px;
+                padding-top: 10px;
+            }
+
+        .inquiries-section {
+            background-color: #FFFFFF;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 800px; /* Increased width for the form */
+            height: 500PX;
+            color: #4DB848;
+            max-width: 90%; /* Ensure responsiveness */
+        }
+
+            .inquiries-section h1 {
+                font-size: 24px;
+                color: #00A6F3;
+                border-bottom: 2px solid #00A6F3;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+                font-family: 'Poppins', sans-serif;
+            }
+
+        .back-button {
+            text-align: right; /* Align back button to right*/
+            margin-bottom: 5px;
+        }
+
+            .back-button a {
+                text-decoration: none;
+                background-color: #daf4ff;
+                color: #009ee3;
+                border: none;
+                padding: 8px 16px;
+                border-radius: 50px;
+                font-size: 14px;
+                cursor: pointer;
+                display: inline-block;
+            }
+
+        .inquiries-section h1 {
+            font-size: 24px;
+            color: #00A6F3;
+            border-bottom: 2px solid #00A6F3;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .inquiry-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 16px;
+            color: #009ee3 !important;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .inquiry-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #E5F6FC;
+            border-radius: 5px;
+            background-color: #F5FCFF;
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .inquiry-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #E5F6FC;
+            border-radius: 5px;
+            background-color: #F5FCFF;
+            font-size: 16px;
+            color: #009ee3;
+            font-weight: bold;
+        }
+
+        .inquiry-form textarea {
+            height: 70px;
+            resize: none;
+            color: #333;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+
+        .inquiry-form button {
+            background-color: #00A6F3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100PX; /* Full width button */
+            font-family: 'Poppins';
+        }
+
+            .inquiry-form button:hover {
+                background-color: #0085C7;
+            }
+
+        .user-inquiries-history {
+            background: #E9FDFF;
+            display: flex;
+            flex-direction: row;
+            padding-right: 63px;
+            width: 100%; /* Adjusted to fit screen width */
+            box-sizing: border-box;
+            position: relative; /* Ensure positioning context for absolute elements */
+            overflow: hidden; /* Hide overflow for ellipses */
+        }
+
+
+        .ellipse-2 {
+            transform: rotate(-68.624deg);
+            top: 167px;
+            right: -500px; /* Adjusted for better visibility */
+        }
+
+        .ellipse-6 {
+            transform: rotate(-68.624deg);
+            top: 184px;
+            right: -750px; /* Adjusted for better visibility */
+        }
+
+        .ellipse-3 {
+            transform: rotate(-85.292deg);
+            top: 546px;
+            right: -400px; /* Adjusted for better visibility */
+        }
+
+        .ellipse-4 {
+            transform: rotate(-85.292deg);
+            top: 741px;
+            right: -200px; /* Adjusted for better visibility */
+        }
+
+        .ellipse-5 {
+            transform: rotate(-92.739deg);
+            top: 910px;
+            right: -50px; /* Adjusted for better visibility */
+        }
+
+        .user-inquiries-history .user,
+        .user-inquiries-history .home,
+        .user-inquiries-history .book-now,
+        .user-inquiries-history .inquiries,
+        .user-inquiries-history .my-bookings,
+        .user-inquiries-history .log-out {
+            overflow-wrap: break-word;
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 36px; /* Unified font size for consistency */
+            color: #00B5EC;
+        }
+
+        .log-out {
+            color: #DD5353;
+        }
+
+        .inquiries-section {
+            max-width: 800px; /* Limits the width of the inquiries section */
+            margin: 0 auto; /* Centers the inquiries section on the page */
+        }
+
+        .inquiry-form {
+            display: flex;
+            flex-direction: column; /* Stacks the rows vertically */
+            gap: 15px; /* Adds spacing between each row */
+        }
+
+        .inquiry-row {
+            display: flex;
+            align-items: center; /* Aligns items vertically in the center */
+            justify-content: space-between; /* Distributes space between items */
+            border-bottom: 1px solid #ddd; /* Adds a bottom border for separation */
+            padding: 10px 0; /* Adds padding for spacing */
+        }
+
+        .issue-label {
+            font-weight: 600; /* Makes the label bold */
+            flex: 2; /* Takes up more space than other elements */
+        }
+
+        .status {
+            display: flex;
+            align-items: center; /* Aligns dot and text vertically in the center */
+            gap: 10px; /* Adds space between dot and text */
+            flex: 1; /* Takes less space than the label but more than the date */
+        }
+
+        .date {
+            text-align: right; /* Aligns text to the right */
+            color: #777; /* Changes text color for the date */
+            flex: 1; /* Takes up the same space as status */
+        }
+
+        /* Optional: Adjusts the size and appearance of the status dot */
+        .dot-small-svgrepo-com img {
+            width: 15px; /* Sets the width of the status dot */
+            height: 15px; /* Sets the height of the status dot */
+        }
+
+
+        .inquiries {
+            color: #4DB848;
+        }
+
+
+
+        .group-14 {
+            border-radius: 30px;
+            background: rgba(176, 247, 255, 0.57);
+            margin: 8px 0 27px 0;
+            display: flex;
+            flex-direction: row;
+            padding: 7.5px 0 5.5px 0;
+            width: 100%; /* Adjusted width to fit within parent container */
+            max-width: 200px; /* Ensure max width for consistency */
+            box-sizing: border-box;
+        }
+
+        ..container-2 {
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 0 30px 30px 0;
+            background: #FFFFFF;
+            margin-right: 20px; /* Adjusted margin for spacing */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0 60px 0;
+            width: 350px; /* Adjusted width for better fit */
+            max-width: 100%; /* Responsive width */
+            box-sizing: border-box;
+        }
+
+        .user-inquiries-history .container-5 {
+            border-radius: 30px;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 43px 36px 60px; /* Adjusted padding for content fit */
+            width: 100%; /* Adjusted width to fit within parent container */
+            max-width: 1400px; /* Ensure max width for consistency */
+            box-sizing: border-box;
+        }
+
+
+        .user-payment-completed {
+            background-image: url('../assets/images/background.png'); /* Adjust the path if necessary */
+            background-size: cover; /* Ensures the image covers the entire area */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px; /* Adjust padding for better spacing */
+            width: 100%;
+            height: 100vh; /* Full viewport height for centering */
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden; /* Hides overflow content */
+        }
+
+
+        .rectangle-6 {
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 20px; /* Softer corners */
+            background: #FFFFFF;
+            padding: 40px; /* Padding for content spacing */
+            width: 90%; /* Responsive width */
+            max-width: 600px; /* Maximum width for smaller screens */
+            text-align: center; /* Center-aligns text inside */
+            position: relative; /* Relative for absolute children */
+            box-sizing: border-box;
+        }
+
+        .checkmark-icon {
+            width: 100px; /* Icon size */
+            height: 100px; /* Icon size */
+            margin-bottom: 20px; /* Space below icon */
+        }
+
+        .your-booking-has-been-confirmed {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 24px; /* Responsive font size */
+            color: #00B5EC;
+            margin-bottom: 10px; /* Space below heading */
+        }
+
+        .booking-id {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 18px; /* Responsive font size */
+            color: #4DB848;
+            margin-bottom: 20px; /* Space below booking ID */
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between buttons */
+            margin-bottom: 20px; /* Space below buttons */
+        }
+
+        .button {
+            background: #E0F7FE; /* Light blue background */
+            color: #00B5EC; /* Button text color */
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 16px; /* Responsive font size */
+            padding: 10px 20px; /* Button padding */
+            border: none; /* Removes default border */
+            border-radius: 20px; /* Rounded corners */
+            cursor: pointer; /* Changes cursor on hover */
+            text-align: center; /* Center text */
+            text-decoration: none; /* Removes underline from links */
+        }
+
+            .button:hover {
+                background: #00B5EC; /* Darker blue on hover */
+                color: #FFFFFF; /* White text on hover */
+            }
+
+        .back-button {
+            background: #00B5EC; /* Dark blue background */
+            color: #FFFFFF; /* Button text color */
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 16px; /* Responsive font size */
+            padding: 12px 30px; /* Button padding */
+            border: none; /* Removes default border */
+            border-radius: 20px; /* Rounded corners */
+            cursor: pointer; /* Changes cursor on hover */
+            text-align: center; /* Center text */
+            text-decoration: none; /* Removes underline from links */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="user-payment-completed">
+        <div class="rectangle-6">
+            <img class="checkmark-icon" src="~/assets/vectors/vector_56_x2.svg" alt="Checkmark" />
+            <div class="your-booking-has-been-confirmed">Your booking has been confirmed.</div>
+            <div class="booking-id">Booking ID: 12435678</div>
+            <div class="button-container">
+                <a href="#" class="button">Download Ticket</a>
+                <a href="#" class="button">Email Ticket</a>
+            </div>
+            <a href="#" class="back-button" onclick="location.href='@Url.Action("Dashboard", "User")'">Back to Dashboard</a>
+        </div>
+    </div>
+
+</body>
+</html>
